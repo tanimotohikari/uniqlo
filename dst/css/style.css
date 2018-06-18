@@ -69,13 +69,6 @@ li {
 .layout-bottom {
   margin-bottom: 20px; }
 
-.card {
-  background-color: #fff;
-  border-bottom: 1px solid #ababab; }
-
-.text-attention {
-  color: #f00; }
-
 .header {
   padding: 15px;
   background-color: #fff;
@@ -112,3 +105,32 @@ li {
     font-family: "Alte Din 1451 Mittelschrift";
     text-align: center;
     padding: 30px 0; }
+
+.card {
+  background-color: #fff;
+  border-bottom: 1px solid #ababab; }
+
+.text-attention {
+  color: #f00; }
+
+.navi {
+  font-family: "Alte Din 1451 Mittelschrift";
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: stretch;
+      align-items: stretch; }
+  .navi .navi-anchor {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+    -ms-flex-negative: 1;
+        flex-shrink: 1; }
+    .navi .navi-anchor.woman {
+      background-color: #fc0d1b; }
+    .navi .navi-anchor.man {
+      background-color: #020d80; }
+    .navi .navi-anchor.kids {
+      background-color: #50b4f0; }
+    .navi .navi-anchor.baby {
+      background-color: #96c800; }

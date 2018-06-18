@@ -1,0 +1,29 @@
+.navi {
+  font-family: $uniqlo-font;
+  display: flex;
+  align-items: stretch;
+
+  .navi-anchor {
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 20px;
+    flex-shrink: 1;
+
+    &.woman {
+      background-color: #fc0d1b;
+    }
+
+    &.man {
+      background-color: #020d80;
+    }
+
+    &.kids {
+      background-color: #50b4f0;
+    }
+
+    &.baby {
+      background-color: #96c800;
+    }
+  }
+}

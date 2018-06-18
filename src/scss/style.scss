@@ -1,9 +1,12 @@
 // base
-//@import 'base/reset';
-//@import 'base/base';
+@import 'base/reset';
+@import 'base/base';
+@import 'base/setting';
 
 // layout
-//@import 'layout/layout';
+@import 'layout/layout';
 
 // module
-//@import 'module/header';
+@import 'module/card';
+@import 'module/text';
+@import 'module/footer';

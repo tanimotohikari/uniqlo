@@ -1,0 +1,41 @@
+.footer {
+  padding: 0 4%;
+
+  .footer-section-separate {
+    height: 2px;
+    background-color: #1b1b1b;
+  }
+
+  .footer-card {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.6em;
+    text-align: center;
+    background-color: #fff;
+    border-bottom: 1px solid #ababab;
+    padding: 3% 0;
+  }
+
+  .footer-list {
+
+    & > li {
+      border-bottom: 1px solid #ababab;
+      padding: 25px 0;
+    }
+
+    .footer-list-anchor {
+      color: #1b1b1b;
+      font-size: 14px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  }
+
+  .footer-copyright {
+    color: #ababab;
+    font-size: 11px;
+    font-family: $uniqlo-font;
+    text-align: center;
+    padding: 30px 0;
+  }
+}

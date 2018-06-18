@@ -39,7 +39,7 @@ table {
 a {
   text-decoration: none; }
 
-body, a {
+body {
   font-family: -apple-system, BlinkMacSystemFont 'Helvetica Neue', 'ヒラギノ角ゴ ProN', 'Hiragino Kaku Gothic ProN', sans-serif;
   background-color: #f4f4f4; }
 
@@ -75,6 +75,15 @@ li {
 
 .text-attention {
   color: #f00; }
+
+.header {
+  padding: 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #dadada;
+  display: -ms-flexbox;
+  display: flex; }
+  .header > *:first-child {
+    margin-right: auto; }
 
 .footer {
   padding: 0 4%; }

@@ -117,15 +117,18 @@ li {
   font-family: "Alte Din 1451 Mittelschrift";
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: stretch;
-      align-items: stretch; }
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
   .navi .navi-anchor {
     color: #fff;
     font-size: 14px;
     text-align: center;
-    padding: 20px;
-    -ms-flex-negative: 1;
-        flex-shrink: 1; }
+    padding: 35px 20px;
+    -ms-flex-positive: 2;
+        flex-grow: 2; }
+    .navi .navi-anchor:first-child {
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
     .navi .navi-anchor.woman {
       background-color: #fc0d1b; }
     .navi .navi-anchor.man {

@@ -1,14 +1,18 @@
 .navi {
   font-family: $uniqlo-font;
   display: flex;
-  align-items: stretch;
+  justify-content: space-between;
 
   .navi-anchor {
     color: #fff;
     font-size: 14px;
     text-align: center;
-    padding: 20px;
-    flex-shrink: 1;
+    padding: 35px 20px;
+    flex-grow: 2;
+
+    &:first-child {
+      flex-grow: 1;
+    }
 
     &.woman {
       background-color: #fc0d1b;

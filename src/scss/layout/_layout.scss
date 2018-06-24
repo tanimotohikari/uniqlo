@@ -14,11 +14,28 @@
   margin-bottom: 5px;
 }
 
-
 .layout-bottom-small {
   margin-bottom: 10px;
 }
 
 .layout-bottom {
   margin-bottom: 20px;
+}
+
+.layout-float-left {
+  float: left;
+}
+
+.layout-half {
+
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+
+  & > * {
+    width: 50%;
+    float: left;
+  }
 }

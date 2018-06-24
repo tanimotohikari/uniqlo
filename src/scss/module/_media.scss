@@ -1,0 +1,17 @@
+.media {
+
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+
+  & > * {
+    float: left;
+  }
+
+  .media-body {
+    padding: 10px;
+    box-sizing: border-box;
+  }
+}

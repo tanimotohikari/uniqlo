@@ -69,6 +69,27 @@ li {
 .layout-bottom {
   margin-bottom: 20px; }
 
+.layout-float-left {
+  float: left; }
+
+.layout-half:after {
+  content: '';
+  clear: both;
+  display: block; }
+
+.layout-half > * {
+  width: 50%;
+  float: left; }
+
+.l-heading-title {
+  margin: 5px; }
+
+.layout-media .layout-media-thumbnail {
+  width: 30%; }
+
+.layout-media .layout-media-body {
+  width: 70%; }
+
 .header {
   padding: 15px;
   background-color: #fff;
@@ -113,6 +134,15 @@ li {
 .text-attention {
   color: #f00; }
 
+.text-small {
+  font-size: 14px; }
+
+.text-large {
+  font-size: 18px; }
+
+.text-bold {
+  font-weight: bold; }
+
 .navi {
   font-family: "Alte Din 1451 Mittelschrift";
   display: -ms-flexbox;
@@ -137,3 +167,53 @@ li {
       background-color: #50b4f0; }
     .navi .navi-anchor.baby {
       background-color: #96c800; }
+
+.grid-list {
+  background-color: #fff;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .grid-list:after {
+    content: '';
+    clear: both;
+    display: block; }
+  .grid-list > li {
+    -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+    box-sizing: border-box;
+    padding: 20px;
+    border-bottom: 1px solid #dadada;
+    text-align: center;
+    line-height: 1.3; }
+    .grid-list > li:nth-child(2n-1) {
+      border-right: 1px solid #dadada; }
+  .grid-list .grid-list-anchor {
+    color: #1b1b1b;
+    font-weight: bold;
+    -ms-flex-pack: center;
+        justify-content: center; }
+
+.heading-title .heading-title-label {
+  background-color: #fe0000;
+  color: #fff;
+  padding: 15px 10px;
+  font-size: 11px;
+  text-align: center;
+  line-height: 1.3; }
+
+.heading-title .heading-title-body {
+  color: #2f2e2e;
+  padding: 10px 8px 0; }
+
+.media:after {
+  content: '';
+  clear: both;
+  display: block; }
+
+.media > * {
+  float: left; }
+
+.media .media-body {
+  padding: 10px;
+  box-sizing: border-box; }

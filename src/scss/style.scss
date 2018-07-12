@@ -5,11 +5,13 @@
 
 // layout
 @import 'layout/layout';
-@import 'layout/heading';
 @import 'layout/media';
+@import 'layout/ranking';
+@import 'layout/rate';
 
 // module
 @import 'module/header';
+@import 'module/section';
 @import 'module/footer';
 @import 'module/card';
 @import 'module/text';
@@ -17,3 +19,7 @@
 @import 'module/grid';
 @import 'module/heading';
 @import 'module/media';
+@import 'module/label';
+@import 'module/tab';
+@import 'module/carousel';
+@import 'module/ranking';

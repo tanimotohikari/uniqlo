@@ -1,3 +1,7 @@
+.layout-full {
+  width: 100%;
+}
+
 .layout-vertical-align {
   vertical-align: middle;
 }
@@ -6,8 +10,24 @@
   text-align: center;
 }
 
+.layout-align-right {
+  text-align: right;
+}
+
+.layout-align-left {
+  text-align: left;
+}
+
 .layout-left {
   margin-left: 10px;
+}
+
+.layout-large {
+  margin-left: 20px;
+}
+
+.layout-xlarge {
+  margin-left: 30px;
 }
 
 .layout-bottom-xsmall {
@@ -26,6 +46,22 @@
   float: left;
 }
 
+.layout-flex {
+  display: flex;
+
+  &.wrap {
+    flex-wrap: wrap;
+  }
+
+  &.equality {
+    justify-content: space-between;
+  }
+}
+
+.layout-line-height {
+  line-height: 1.2;
+}
+
 .layout-half {
 
   &:after {
@@ -37,5 +73,7 @@
   & > * {
     width: 50%;
     float: left;
+    padding: 10px;
+    box-sizing: border-box;
   }
 }

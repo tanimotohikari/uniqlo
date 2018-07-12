@@ -51,14 +51,29 @@ li {
   display: block;
   clear: both; }
 
+.layout-full {
+  width: 100%; }
+
 .layout-vertical-align {
   vertical-align: middle; }
 
 .layout-align-center {
   text-align: center; }
 
+.layout-align-right {
+  text-align: right; }
+
+.layout-align-left {
+  text-align: left; }
+
 .layout-left {
   margin-left: 10px; }
+
+.layout-large {
+  margin-left: 20px; }
+
+.layout-xlarge {
+  margin-left: 30px; }
 
 .layout-bottom-xsmall {
   margin-bottom: 5px; }
@@ -72,6 +87,19 @@ li {
 .layout-float-left {
   float: left; }
 
+.layout-flex {
+  display: -ms-flexbox;
+  display: flex; }
+  .layout-flex.wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .layout-flex.equality {
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+
+.layout-line-height {
+  line-height: 1.2; }
+
 .layout-half:after {
   content: '';
   clear: both;
@@ -79,16 +107,38 @@ li {
 
 .layout-half > * {
   width: 50%;
-  float: left; }
-
-.l-heading-title {
-  margin: 5px; }
+  float: left;
+  padding: 10px;
+  box-sizing: border-box; }
 
 .layout-media .layout-media-thumbnail {
   width: 30%; }
 
 .layout-media .layout-media-body {
   width: 70%; }
+
+.layout-media-half > * {
+  width: 50%; }
+
+.l-ranking-list > li {
+  margin-left: 15px; }
+  .l-ranking-list > li:first-child {
+    margin-left: 0; }
+
+.l-ranking-list .l-ranking-list-thumbnail {
+  position: relative; }
+  .l-ranking-list .l-ranking-list-thumbnail .l-ranking-list-thumbnail-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 18px; }
+
+.l-rate > li {
+  margin-left: 5px; }
+  .l-rate > li:first-child {
+    margin-left: 0; }
+  .l-rate > li .l-rate-star {
+    width: 14px; }
 
 .header {
   padding: 15px;
@@ -98,6 +148,14 @@ li {
   display: flex; }
   .header > *:first-child {
     margin-right: auto; }
+
+.section-container {
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(139, 139, 139, 0.4); }
+  .section-container .section-container-inner {
+    padding: 15px; }
+  .section-container .section-container-separate {
+    border-bottom: 1px solid #dadada; }
 
 .footer {
   padding: 0 4%; }
@@ -132,16 +190,50 @@ li {
   border-bottom: 1px solid #ababab; }
 
 .text-attention {
-  color: #f00; }
+  color: #fe0002; }
+
+.text-note {
+  color: #9a9a9a; }
+
+.text-xxsmall {
+  font-size: 2vw !important; }
+
+.text-xsmall {
+  font-size: 3.75vw !important; }
 
 .text-small {
-  font-size: 14px; }
+  font-size: 4.375vw !important; }
 
 .text-large {
-  font-size: 18px; }
+  font-size: 5vw !important; }
+
+.text-xlarge {
+  font-size: 10vw !important; }
 
 .text-bold {
   font-weight: bold; }
+
+.text-uniqlo {
+  font-family: "Alte Din 1451 Mittelschrift"; }
+
+.text-price {
+  font-weight: bold;
+  font-size: 22px;
+  font-family: "Alte Din 1451 Mittelschrift";
+  color: #fe0002; }
+  .text-price.large {
+    font-size: 30px; }
+
+.text-title {
+  font-size: 21px;
+  font-weight: bold;
+  padding: 15px; }
+
+.text-anchor {
+  color: #1b1b1b;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline; }
 
 .navi {
   font-family: "Alte Din 1451 Mittelschrift";
@@ -194,17 +286,20 @@ li {
     -ms-flex-pack: center;
         justify-content: center; }
 
-.heading-title .heading-title-label {
-  background-color: #fe0000;
-  color: #fff;
-  padding: 15px 10px;
-  font-size: 11px;
-  text-align: center;
-  line-height: 1.3; }
-
-.heading-title .heading-title-body {
-  color: #2f2e2e;
-  padding: 10px 8px 0; }
+.heading-title {
+  padding: 5px; }
+  .heading-title .heading-title-label {
+    background-color: #fe0000;
+    color: #fff;
+    padding: 15px 10px;
+    font-size: 11px;
+    text-align: center;
+    line-height: 1.3; }
+    .heading-title .heading-title-label.new {
+      background-color: #378693; }
+  .heading-title .heading-title-body {
+    color: #2f2e2e;
+    padding: 5px 8px 0; }
 
 .media:after {
   content: '';
@@ -215,5 +310,53 @@ li {
   float: left; }
 
 .media .media-body {
-  padding: 10px;
+  font-size: 15px;
+  padding: 15px;
   box-sizing: border-box; }
+  .media .media-body .media-body-text {
+    color: #595959;
+    line-height: 1.3; }
+
+.label {
+  display: inline-block;
+  padding: 2px 6px;
+  color: #fff;
+  font-size: 8px;
+  background-color: #ababab; }
+  .label.woman {
+    background-color: #fe0002; }
+  .label.man {
+    background-color: #030085; }
+  .label.kids {
+    background-color: #50b4f2; }
+  .label.baby {
+    background-color: #95c800; }
+
+.tab {
+  font-family: "Alte Din 1451 Mittelschrift";
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .tab .tab-anchor {
+    color: #1b1b1b;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 20px 20px;
+    -ms-flex-positive: 2;
+        flex-grow: 2; }
+    .tab .tab-anchor:first-child {
+      -ms-flex-positive: 1;
+          flex-grow: 1; }
+
+.carousel {
+  overflow: hidden;
+  overflow-x: scroll; }
+
+.ranking-list {
+  padding: 0 20px; }
+  .ranking-list .ranking-list-number {
+    display: inline-block;
+    border: 1px solid #dadada;
+    font-weight: bold;
+    padding: 5px 8px; }

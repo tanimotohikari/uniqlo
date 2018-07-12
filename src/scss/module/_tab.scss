@@ -1,0 +1,17 @@
+.tab {
+  font-family: $uniqlo-font;
+  display: flex;
+  justify-content: space-between;
+
+  .tab-anchor {
+    color: #1b1b1b;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 20px 20px;
+    flex-grow: 2;
+
+    &:first-child {
+      flex-grow: 1;
+    }
+  }
+}

@@ -1,15 +1,59 @@
 .text-attention {
-  color: #f00;
+  color: #fe0002;
+}
+
+.text-note {
+  color: #9a9a9a;
+}
+
+.text-xxsmall {
+  font-size: 2vw !important;
+}
+
+.text-xsmall {
+  font-size: 3.75vw !important;
 }
 
 .text-small {
-  font-size: 14px;
+  font-size: 4.375vw !important;
 }
 
 .text-large {
-  font-size: 18px;
+  font-size: 5vw !important;
+}
+
+.text-xlarge {
+  font-size: 10vw !important;
 }
 
 .text-bold {
   font-weight: bold;
+}
+
+.text-uniqlo {
+  font-family: $uniqlo-font;
+}
+
+.text-price {
+  font-weight: bold;
+  font-size: 22px;
+  font-family: $uniqlo-font;
+  color: #fe0002;
+
+  &.large {
+    font-size: 30px;
+  }
+}
+
+.text-title {
+  font-size: 21px;
+  font-weight: bold;
+  padding: 15px;
+}
+
+.text-anchor {
+  color: #1b1b1b;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: underline;
 }

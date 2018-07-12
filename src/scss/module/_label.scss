@@ -1,0 +1,23 @@
+.label {
+  display: inline-block;
+  padding: 2px 6px;
+  color: #fff;
+  font-size: 8px;
+  background-color: #ababab;
+
+  &.woman {
+    background-color: #fe0002;
+  }
+
+  &.man {
+    background-color: #030085;
+  }
+
+  &.kids {
+    background-color: #50b4f2;
+  }
+
+  &.baby {
+    background-color: #95c800;
+  }
+}

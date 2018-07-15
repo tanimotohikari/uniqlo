@@ -1,0 +1,17 @@
+.filter {
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+
+  & > li:first-child {
+    flex-grow: 2;
+    border-left: 0;
+  }
+
+  & > li {
+    padding: 25px 10px;
+    border-left: 1px solid #dadada;
+  }
+}

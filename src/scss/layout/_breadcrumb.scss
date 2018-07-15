@@ -1,0 +1,12 @@
+.layout-breadcrumb {
+
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+
+  & > li {
+    float: left;
+  }
+}

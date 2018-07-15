@@ -66,6 +66,9 @@ li {
 .layout-align-left {
   text-align: left; }
 
+.layout-left-small {
+  margin-left: 5px; }
+
 .layout-left {
   margin-left: 10px; }
 
@@ -111,6 +114,19 @@ li {
   padding: 10px;
   box-sizing: border-box; }
 
+.layout-table {
+  display: table; }
+  .layout-table > * {
+    display: table-cell; }
+
+.layout-row:after {
+  content: '';
+  clear: both;
+  display: block; }
+
+.layout-row > * {
+  float: left; }
+
 .layout-media .layout-media-thumbnail {
   width: 30%; }
 
@@ -140,6 +156,24 @@ li {
   .l-rate > li .l-rate-star {
     width: 14px; }
 
+.layout-breadcrumb:after {
+  content: '';
+  display: block;
+  clear: both; }
+
+.layout-breadcrumb > li {
+  float: left; }
+
+.layout-item .layout-item-list:after {
+  content: '';
+  clear: both;
+  display: block; }
+
+.layout-item .layout-item-list > li {
+  width: 50%;
+  float: left;
+  box-sizing: border-box; }
+
 .header {
   padding: 15px;
   background-color: #fff;
@@ -148,6 +182,8 @@ li {
   display: flex; }
   .header > *:first-child {
     margin-right: auto; }
+  .header.offset-border {
+    border: 0; }
 
 .section-container {
   background-color: #fff;
@@ -360,3 +396,41 @@ li {
     border: 1px solid #dadada;
     font-weight: bold;
     padding: 5px 8px; }
+
+.breadcrumb {
+  padding: 25px 15px; }
+  .breadcrumb > li {
+    color: #1b1b1b;
+    font-size: 13px; }
+    .breadcrumb > li:after {
+      content: '/';
+      display: inline-block;
+      padding: 0 10px; }
+    .breadcrumb > li:last-child:after {
+      content: none; }
+  .breadcrumb .breadcrumb-anchor {
+    color: #1b1b1b;
+    text-decoration: underline; }
+
+.filter {
+  border-top: 1px solid #dadada;
+  border-bottom: 1px solid #dadada;
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: bold; }
+  .filter > li:first-child {
+    -ms-flex-positive: 2;
+        flex-grow: 2;
+    border-left: 0; }
+  .filter > li {
+    padding: 25px 10px;
+    border-left: 1px solid #dadada; }
+
+.anchor {
+  color: #1b1b1b; }
+
+.item .item-list > li:nth-child(n+1) {
+  border-right: 1px solid #dadada; }
+
+.item .item-list .item-list-body {
+  padding: 10px; }

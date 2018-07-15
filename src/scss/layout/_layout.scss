@@ -18,6 +18,10 @@
   text-align: left;
 }
 
+.layout-left-small {
+  margin-left: 5px;
+}
+
 .layout-left {
   margin-left: 10px;
 }
@@ -49,11 +53,11 @@
 .layout-flex {
   display: flex;
 
-  &.wrap {
+  &.wrap {//アイテムを1列に並べる
     flex-wrap: wrap;
   }
 
-  &.equality {
+  &.equality {//アイテムを均等に配置する
     justify-content: space-between;
   }
 }
@@ -75,5 +79,26 @@
     float: left;
     padding: 10px;
     box-sizing: border-box;
+  }
+}
+
+.layout-table {
+  display: table;
+
+  & > * {
+    display: table-cell;
+  }
+}
+
+.layout-row {
+
+  &:after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+
+  & > * {
+    float: left;
   }
 }

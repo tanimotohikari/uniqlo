@@ -1,0 +1,13 @@
+.item {
+
+  .item-list {
+
+    & > li:nth-child(n+1) {
+      border-right: 1px solid #dadada;
+    }
+
+    .item-list-body {
+      padding: 10px;
+    }
+  }
+}

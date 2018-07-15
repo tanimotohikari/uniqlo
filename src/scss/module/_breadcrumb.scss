@@ -1,0 +1,23 @@
+.breadcrumb {
+  padding: 25px 15px;
+
+  & > li {
+    color: #1b1b1b;
+    font-size: 13px;
+
+    &:after {
+      content: '/';
+      display: inline-block;
+      padding: 0 10px;
+    }
+
+    &:last-child:after {
+      content: none;
+    }
+  }
+
+  .breadcrumb-anchor {
+    color: #1b1b1b;
+    text-decoration: underline;
+  }
+}

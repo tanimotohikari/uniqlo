@@ -8,6 +8,8 @@
 @import 'layout/media';
 @import 'layout/ranking';
 @import 'layout/rate';
+@import 'layout/breadcrumb';
+@import 'layout/item';
 
 // module
 @import 'module/header';
@@ -23,3 +25,7 @@
 @import 'module/tab';
 @import 'module/carousel';
 @import 'module/ranking';
+@import 'module/breadcrumb';
+@import 'module/filter';
+@import 'module/anchor';
+@import 'module/item';
